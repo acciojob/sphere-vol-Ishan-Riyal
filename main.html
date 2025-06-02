@@ -19,27 +19,6 @@ label,input{display:block;}
 		
 		<input type="submit" value="Calculate" id="submit"> 
 	</form>
-	<!-- <script type="text/javascript" src="./script.js"></script> -->
-	<script
-	  function volume_sphere() {
-	      const radiusInput = document.getElementById('radius').value;
-	      const volumeOutput = document.getElementById('volume');
-
-	      const r = parseFloat(radiusInput);
-
-	      if (isNaN(r) || r < 0) {
-	        volumeOutput.value = 'NaN';
-	        return false;
-	      }
-
-	      const volume = (4 / 3) * Math.PI * Math.pow(r, 3);
-	      volumeOutput.value = volume.toFixed(4);
-	      return false;
-    }
-
-    // Attach function to form submission
-    document.getElementById('MyForm').onsubmit = volume_sphere;
-
-	</script>
+	<script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
